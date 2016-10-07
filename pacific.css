@@ -7,9 +7,10 @@ body {
     background-repeat:no-repeat;
 }
 header {
+
+    background-color: #000033;
     background-image: url(images/sunset.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: right;
     height: 60px;
     text-align: center;
