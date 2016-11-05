@@ -38,6 +38,7 @@ nav ul{
 nav a{
     text-decoration: none;
     padding-left:0;
+    transition: 3s ease-out;
 }
 
 nav a:link{
@@ -164,6 +165,55 @@ tr:nth-of-type(odd){
     display:inline;
 }
 
+label{ float:left;
+    display: block;
+    padding-right: 5px;
+    width:120px;
+    text-align: right;
+    
+}
+
+input:submit{
+    margin-left: 130px;
+}
+
+video, embed{ float:right; padding-left: 20px;
+    
+}
+#gallary{
+    position: relative;
+    text-align: left;
+    color: black;
+    height: 200px;
+}
+
+figure{
+    position: absolute; left: 280px; text-align: center; opacity: .25;
+}
+
+#gallary ul{ width: 300px; text-decoration: none; }
+
+#gallary ul li{display: inline; float: left; padding:10px}
+
+#gallary img{ border: none}
+
+#gallary span{
+    position: absolute; left: -1000px; opacity: 0;
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+    transition: opacity 3s ease-in-out;  
+}
+
+
+#gallary a:hover span{ position:absolute; top: 16px; left: 320px; text-align: center; opacity: 1
+    
+}
+
+.nofloat{
+    float: clear;
+}
+
 @media only screen and (max-width: 64em){
     body{
         margin: 0; background-color: #FFFFFF;
@@ -219,4 +269,7 @@ tr:nth-of-type(odd){
     display:none;
     }
     
+    #gallary{
+        display: none
+    }
 }
